@@ -6,7 +6,6 @@ const {
   updateLink,
   createLinkTag,
   getLinksByTag,
-  // other db methods
 } = require('./index');
 
 async function dropTables() {
