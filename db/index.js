@@ -6,7 +6,7 @@ const { KEY, USER } = process.env;
 const DB_NAME = 'linkerator-db';
 const DB_URL =
   process.env.DATABASE_URL ||
-  `postgres://${USER}:${KEY}@localhost:5432/${DB_NAME}`;
+  `postgres://${USER}:${KEY}@localhost:5432/${DB_NAME}?ssl=true`;
 
 // Create the client
 const client = new Client(DB_URL);
